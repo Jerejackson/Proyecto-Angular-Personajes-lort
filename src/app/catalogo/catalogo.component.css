@@ -1,0 +1,61 @@
+h6{
+	padding: 0;
+	margin: 0;
+}
+
+label{
+	font-size: 11px;
+}
+
+#lblDescripcion{
+	color: red;
+}
+
+img{
+	width: 250px;
+	height: 350px;
+}
+
+.card{
+	box-shadow: 2px 2px 5px #999;
+}
+
+#btnHome{
+	width: 60px;
+	height: 60px;
+}
+
+@media only screen and (max-width: 320px) {
+    img{
+		width: 235px;
+		height: 300px;
+	}
+}
+
+@media only screen and (max-width: 375px) and (min-width: 321px){
+    img{
+		width: 280px;
+		height: 350px;
+	}
+}
+
+@media only screen and (max-width: 425px) and (min-width: 376px){
+    img{
+		width: 322px;
+		height: 380px;
+	}
+}
+
+@media only screen and (max-width: 768px) and (min-width: 426px){
+    img{
+		width: 128px;
+		height: 190px;
+	}
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 769px){
+    img{
+		width: 180px;
+		height: 250px;
+	}
+}

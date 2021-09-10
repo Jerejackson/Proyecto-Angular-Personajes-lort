@@ -1,0 +1,33 @@
+<!-- la propiedad *ngIf nos permite evaluar si existe un valor en la variable utilizada, en caso de no usar la propiedad, arrojaraun error debido a que al cargar la pagina el valor inicial del heroe seleccionado en undefined -->
+
+<div *ngIf="personaje" class="container">
+	<div class="row">
+		<div class="row col-12">
+			<div class="col-1">
+				<button class="btn btn-danger btnNav" routerLink="/dashboard">
+					<span class="fas fa-home"></span>
+				</button>
+			</div>
+			<div class=" col-1 offset-9">
+				<button id="btnLogout" class="btn btn-danger btnNav" routerLink="/dashboard">Logout</button>
+				
+			</div>
+		</div>
+	</div>
+	<div class="row" id="descripcion">
+		<div class="col-sm-12 col-md-6">
+			<h2>{{personaje.nombre | uppercase}}</h2>
+			<label>{{personaje.raza}}</label>
+			<hr>
+			<img src="..{{personaje.img}}" alt="...">
+		</div>
+		<div class="col-sm-12 col-md-6">
+			<h2>{{personaje.papel}}</h2>
+			<hr>
+			<p>{{personaje.descripcion}}</p>
+			<button id="btnRegresar" class="btn btn-default" (click)="goBack()">Regresar</button>
+		</div>
+		
+	</div>
+
+</div>

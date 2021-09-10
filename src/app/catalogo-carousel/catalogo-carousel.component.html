@@ -1,0 +1,27 @@
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-10 offset-2">
+			<button id="btnHome" class="btn btn-danger rounded-circle" routerLink="/dashboard">
+				<span class="fas fa-home"></span>
+			</button>
+			<h5 class="pt-5">{{titulo}}</h5>
+			<hr>
+
+			<ngb-carousel *ngIf="personajes">
+			  <ng-template *ngFor="let personaje of personajes" ngbSlide>
+			    <div class="picsum-img-wrapper">
+			      <img src="..{{personaje.img}}" alt="Random first slide">
+			    </div>
+			    <div class="carousel-caption">
+			      <h1>{{personaje.nombre}}</h1>
+			      <p>Raza: {{personaje.raza}}, Papel: {{personaje.papel}}</p>
+			      <a routerLink="/detail/{{personaje.id}}">
+			      	<label id="lblDescripcion" class="pl-4">Leer más...</label>
+			      </a>
+			    </div>
+			  </ng-template>
+			</ngb-carousel>
+
+		</div>
+	</div>
+</div>

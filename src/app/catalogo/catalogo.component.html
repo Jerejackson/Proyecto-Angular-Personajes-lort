@@ -1,0 +1,36 @@
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-10 offset-2">
+			<button id="btnHome" class="btn btn-danger rounded-circle" routerLink="/dashboard">
+				<span class="fas fa-home"></span>
+			</button>
+			<h5 class="pt-5">{{titulo}}</h5>
+			<hr>
+
+
+
+			<div class="row row-cols-1 row-cols-md-4">
+			  <div *ngFor="let personaje of personajes" class="col mb-4">
+			    <div class="card h-100">
+			      <div class="card-text px-4 py-1">
+			      	<h6>{{personaje.nombre}}</h6>
+			      	<label class="text-muted">{{personaje.raza}}</label>
+			      </div>
+			      <img src="..{{personaje.img}}" class="card-img-top" alt="...">
+			      <div class="card-body">
+			        <label class="font-weight-bold">Papel:  </label>
+			        <label class="pl-1">{{personaje.papel}}</label>
+			      </div>
+			      <a routerLink="/detail/{{personaje.id}}">
+			      	<label id="lblDescripcion" class="pl-4">Leer más...</label>
+			      </a>
+			    </div>
+			  </div>
+			</div>
+
+
+
+
+		</div>
+	</div>
+</div>

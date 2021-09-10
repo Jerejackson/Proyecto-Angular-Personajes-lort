@@ -1,0 +1,67 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+#cabezaMenu{
+	background-color: #228b22;
+}
+#cuerpoMenu{
+	background-color: #fff;
+	height: 100vh;
+}
+#cabezaMenu span {
+	color: #fff;
+}
+
+#sidebar {
+	position: fixed;
+	transition: all 500ms linear;
+	z-index: 2;
+}
+
+.activo{
+	left: 0px;
+}
+
+.noActivo{
+	left: -125px;
+}
+
+.mostrar{
+	display: all;
+}
+
+.ocultar{
+	display: none;
+}
+
+#sidebar ul, li{
+	text-align: left;
+
+}
+
+#opacidad{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    transition: all 0.5s ease-in-out;
+    z-index: 1;
+}
+
+.activarSombra {
+    display: block;
+}
+
+.noActivarSombra {
+    display: none;
+}
+
+li{
+	list-style:none;
+}
+
+@media only screen and (max-width: 375px) and (min-width: 321px){
+    
+}
